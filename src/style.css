@@ -17,10 +17,6 @@ body {
 }
 
 header {
-  display: flex;
-  align-items: center;
-  /* padding-top: 16px;
-  padding-bottom: 16px; */
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.75);
   position: sticky;
@@ -30,29 +26,52 @@ header {
   box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.05);
   margin-bottom: 40px;
 }
+
 nav {
   display: flex;
   align-items: center;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+.p-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.container {
+  width: auto;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.p-24 {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+.mr-24 {
+  margin-right: 24px;
+}
+.mr-16 {
+  margin-right: 16px;
+}
+
 .bold {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
 }
 .gray-text {
   color: #586069;
 }
 
-header ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  align-items: row;
-  color: #24292e;
-}
 a {
   color: #24292e;
   text-decoration: none;
+  background-color: transparent;
 }
 a header:hover {
   text-decoration: underline;

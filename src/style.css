@@ -71,6 +71,9 @@ nav {
 .gray-text {
   color: #586069;
 }
+.display-none {
+  display: none;
+}
 
 li {
   list-style: none;
@@ -120,4 +123,18 @@ article ul {
 }
 article ul li a img {
   border-radius: 3px !important;
+}
+
+@media (min-width: 768px) {
+  /* display: block; */
+  .mr-16-media {
+    margin-right: 16px;
+  }
+  .p-16-media {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .d-media-block {
+    display: block;
+  }
 }

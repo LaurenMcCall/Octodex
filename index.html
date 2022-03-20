@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Octodex</title>
     <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/screen.css" />
+    <!-- <link rel="stylesheet" href="/screen.css" /> -->
+    <script type="module" src="/src/main.ts"></script>
   </head>
   <body>
     <header>
@@ -25,13 +26,20 @@
           <a class="gray-text mr-16 p-16" href="#">Home</a>
           <a class="mr-16 p-16" href="https://octodex.github.com/faq/">FAQ</a>
           <a class="p-16" href="#">RSS</a>
-          <a class="p-16 ml-auto" href="https://twitter.com/githubdesign"
+          <a
+            class="p-16 ml-auto mr-16-media"
+            href="https://twitter.com/githubdesign"
             >Follow us on Twitter</a
           >
-          <!-- <a href="https://github.com/">Back to GitHub.com</a> -->
+          <a
+            class="display-none d-media-block p-16-media mr-16-media"
+            href="https://github.com/"
+            >Back to GitHub.com</a
+          >
         </nav>
       </div>
     </header>
+
     <main>
       <section class="container p-24">
         <article>
@@ -281,6 +289,5 @@
         <p>© 2013 – 2020 GitHub, Inc. All rights reserved.</p>
       </div>
     </footer>
-    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

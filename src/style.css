@@ -14,6 +14,7 @@ body {
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 14px;
   line-height: 1.5;
+  background-color: #fafbfc !important;
 }
 
 header {
@@ -27,7 +28,9 @@ header {
   margin-bottom: 40px;
   display: block;
 }
-
+section {
+  background-color: #fafbfc !important;
+}
 nav {
   display: flex;
   align-items: center;
@@ -90,11 +93,11 @@ a header:hover {
 }
 
 article {
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
   flex-direction: column;
   display: block;
   padding: 8px;
-  background-color: #fff;
+  background-color: #fafbfc !important;
   margin-bottom: 12px;
 }
 
@@ -110,7 +113,8 @@ article > a img {
   border-style: none;
   box-sizing: border-box;
   border: 1px #e1e4e8 solid;
-  /* padding: 8px; */
+  padding: 8px;
+  background-color: #fff;
 }
 article ul li img {
   display: flex;
@@ -125,6 +129,37 @@ article ul li a img {
   border-radius: 3px !important;
 }
 
+/* Responsive design */
+
+@media (min-width: 544px) {
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+    /* margin-right: 8px; */
+    /* margin-left: -8px; */
+  }
+  /* section article {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    padding: 8px;
+    background-color: #fff;
+    margin-bottom: 12px;
+  }
+
+  main section article {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  } */
+}
 @media (min-width: 768px) {
   /* display: block; */
   .mr-16-media {
@@ -136,5 +171,20 @@ article ul li a img {
   }
   .d-media-block {
     display: block;
+  }
+  article {
+    display: flex !important;
+    float: left;
+    flex-wrap: wrap !important;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    padding: 8px;
+    background-color: #fff;
+    margin-bottom: 12px;
+    margin-right: 16px;
+  }
+  section {
+    background-color: #fafbfc !important;
   }
 }
